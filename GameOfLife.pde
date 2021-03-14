@@ -77,7 +77,7 @@ public void copyFromButtonsToBuffer() {
 
 public boolean isValid(int r, int c) {
   //your code here
-   if(r < NUM_ROWS && r >= 0 && c < NUM_COLS && c >= 0)
+  if(r >=0 && r <= NUM_ROWS-1 && c >= 0 && c <= NUM_COLS-1)
   return true;
   else
   return false;
