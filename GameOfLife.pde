@@ -77,7 +77,7 @@ public void copyFromButtonsToBuffer() {
 
 public boolean isValid(int r, int c) {
   //your code here
-  if(r >=0 && r <= NUM_ROWS-1 && c >= 0 && c <= NUM_COLS-1)
+ if(r < NUM_ROWS && r >= 0 && c < NUM_COLS && c >= 0)
   return true;
   else
   return false;
@@ -134,12 +134,13 @@ public class Life {
   }
   public boolean getLife() {
     //replace the code one line below with your code
+    
    if(alive == true)
    return true;
    else if(alive != true)
    return false;
    else
-    return false;
+   return false;
   }
   public void setLife(boolean living) {
     //your code here
