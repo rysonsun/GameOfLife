@@ -111,8 +111,8 @@ public class Life {
   private boolean alive;
 
   public Life (int row, int col) {
-    // width = 400/NUM_COLS;
-    // height = 400/NUM_ROWS;
+    width = 400/NUM_COLS;
+    height = 400/NUM_ROWS;
     myRow = row;
     myCol = col; 
     x = myCol*width;
