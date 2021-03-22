@@ -122,7 +122,7 @@ import de.bezier.guido.*;
  if (alive != true)
  fill(0);
  else
- fill(0,0,(int)(Math.random()*200));
+ fill(Math.random()*200);
  rect(x, y, width, height);
  }
  public boolean getLife() {
